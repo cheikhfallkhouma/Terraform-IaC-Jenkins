@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-echo "🔧 Mise à jour des paquets (sans post-invoke)..."
-# Évite le bug APT lié à command-not-found
+echo "🔧 Mise à jour des paquets (désactivation du hook post-invoke)..."
+# Supprime les hooks APT qui causent des erreurs parfois
+sudo rm -f /etc/apt/apt.conf.d/50command-not-found || true
 sudo apt-get -o APT::Update::Post-Invoke-Success::= -y update
 
 echo "🔧 Installation de curl..."
