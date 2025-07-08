@@ -6,7 +6,7 @@ Créer une infrastructure modulaire avec Terraform permettant le déploiement au
 
 📌 Tâches Principales
 🔹 1. Créer un module EC2
-Utiliser l’image Ubuntu Jammy.
+  Utiliser l’image Ubuntu Jammy.
 
 L’instance devra :
 
@@ -76,8 +76,8 @@ Créer un volume EBS.
   Le nom de domaine s’il existe (ou vide sinon).
 
 ✅ Résultat attendu
-Déploiement répétable et modulaire.
+  Déploiement répétable et modulaire.
 
-Jenkins opérationnel via navigateur (port 8080).
+  Jenkins opérationnel via navigateur (port 8080).
 
-Fichier jenkins_ec2.txt contenant les informations essentielles d’accès.
+  Fichier jenkins_ec2.txt contenant les informations essentielles d’accès.
