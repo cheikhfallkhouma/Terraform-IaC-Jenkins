@@ -84,6 +84,8 @@ Créer un volume EBS.
 
 ![alt text](Screenshots/Infra-as-code.png)
 
+![alt text](<Screenshots/EC2-instance-is-created-and running-in-AWS.png>)
+
 ![alt text](Screenshots/Container-Jenkins-is-running.png)
 
 ![alt text](Screenshots/Container-is-available.png)
