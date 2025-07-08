@@ -28,37 +28,33 @@ module "ec2" {
   volume_size       = var.volume_size
   instance_tag      = var.instance_tag
   ami_id            = data.aws_ami.ubuntu.id  
+  
+  associate_eip     = true
 }
 
+# variable "aws_access_key_id" {
+#   description = "AWS access key ID"
+#   type        = string
+#   sensitive   = true
+# }
 
-output "public_ip" {
-  value = module.ec2.public_ip
-}
-output "public_dns" {
-  value = module.ec2.public_dns
-}
+# variable "aws_secret_access_key" {
+#   description = "AWS secret access key"
+#   type        = string
+#   sensitive   = true
+# }
 
-variable "aws_access_key_id" {
-  description = "AWS access key ID"
-  type        = string
-  sensitive   = true
-}
-
-variable "aws_secret_access_key" {
-  description = "AWS secret access key"
-  type        = string
-  sensitive   = true
-}
-
-provider "aws" {
-  region  = var.region
-  profile = "cfk-credentials"
-}
+# provider "aws" {
+#   region  = var.region
+#   profile = "cfk-credentials"
+# }
 
 resource "local_file" "jenkins_output" {
   content  = <<EOT
 Public IP: ${module.ec2.public_ip}
 Public DNS: ${module.ec2.public_dns}
+Elastic IP: ${module.ec2.elastic_ip != null ? module.ec2.elastic_ip : "No Elastic IP assigned"}
+
 EOT
   filename = "${path.module}/jenkins_ec2.txt"
 }

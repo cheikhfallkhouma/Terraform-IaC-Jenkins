@@ -1,0 +1,4 @@
+Public IP: 34.192.75.110
+Public DNS: ec2-34-239-185-13.compute-1.amazonaws.com
+Elastic IP: 34.192.75.110
+
