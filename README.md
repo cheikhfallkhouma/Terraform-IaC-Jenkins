@@ -81,3 +81,9 @@ Créer un volume EBS.
   Jenkins opérationnel via navigateur (port 8080).
 
   Fichier jenkins_ec2.txt contenant les informations essentielles d’accès.
+
+![alt text](Screenshots/Infra-as-code.png)
+
+![alt text](Screenshots/Container-Jenkins-is-running.png)
+
+![alt text](Screenshots/Container-is-available.png)
