@@ -5,6 +5,7 @@
 Créer une infrastructure modulaire avec Terraform permettant le déploiement automatisé d’un serveur Jenkins conteneurisé sur une instance EC2 Ubuntu (Jammy) dans AWS.
 
 📌 Tâches Principales
+
 🔹 1. Créer un module EC2
   Utiliser l’image Ubuntu Jammy.
 
