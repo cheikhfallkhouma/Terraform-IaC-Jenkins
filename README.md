@@ -22,7 +22,6 @@ L’instance devra :
   Tags de l’instance.
 
 🔹 2. Créer un module EBS
-Créer un volume EBS.
 
   Variable à rendre dynamique :
 
