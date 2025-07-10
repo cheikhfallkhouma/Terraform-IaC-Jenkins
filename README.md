@@ -57,8 +57,7 @@ L’instance devra :
 
   Déployer l’architecture complète de façon modulaire et dynamique.
 
-🔹 7. Installation de Jenkins avec Docker Compose
-  Après le déploiement :
+🔹 7. Installation de Jenkins avec Docker Compose après le déploiement :
 
   Installer Docker et Docker Compose.
 
