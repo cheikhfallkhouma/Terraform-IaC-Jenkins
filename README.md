@@ -89,3 +89,7 @@ Créer un volume EBS.
 ![alt text](Screenshots/Container-Jenkins-is-running.png)
 
 ![alt text](Screenshots/Container-is-available.png)
+
+![alt text](Screenshots/EIP.png)
+
+![alt text](Screenshots/Terraform-destroy.png)

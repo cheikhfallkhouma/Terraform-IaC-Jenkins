@@ -16,3 +16,8 @@ variable "private_key_pem" {
   sensitive   = true
 }
 
+variable "associate_eip" {
+  description = "Whether to allocate and associate an Elastic IP to the instance"
+  type        = bool
+  default     = false
+}

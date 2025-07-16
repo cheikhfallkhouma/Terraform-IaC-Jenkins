@@ -11,5 +11,5 @@ variable "availability_zone" {
 variable "size" {
   description = "The size of the EBS volume in GiB"
   type        = number
-  default     = 8
+  default     = 15
 }
